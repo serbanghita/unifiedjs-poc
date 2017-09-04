@@ -1,0 +1,19 @@
+{
+  "name": "unified-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Serban Ghita",
+  "license": "MIT",
+  "devDependencies": {
+    "rehype-stringify": "^3.0.0",
+    "remark-parse": "^4.0.0",
+    "remark-rehype": "^2.0.1",
+    "unified": "^6.1.5",
+    "unified-stream": "^1.0.1",
+    "unist-util-visit-parents": "^1.1.1"
+  }
+}
