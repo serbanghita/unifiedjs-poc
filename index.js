@@ -27,9 +27,9 @@ function relative_img_url(options) {
 
 var processor = unified()
     .use(markdown)
-    .use(remark2rehype)
-    .use(html)
-    .use(relative_img_url);
+    .use(remark2rehype);
+    // .use(html)
+    // .use(relative_img_url);
 
 process.stdin.pipe(stream(processor)).pipe(process.stdout);
 
