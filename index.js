@@ -27,10 +27,10 @@ function relative_img_url(options) {
 
 var processor = unified()
     .use(markdown)
-    .use(remark2rehype);
-    // .use(html)
+    .use(remark2rehype)
+    .use(html);
     // .use(relative_img_url);
 
 process.stdin.pipe(stream(processor)).pipe(process.stdout);
 
-// node index.js < ./dist/docs/test_picture.md > ./dist/test_picture2.html
+// node index.js < ./dist/on-retrospectives/index.md > ./dist/tmp.html
